@@ -1,7 +1,6 @@
 @RestResource(urlMapping='/dataIntegration/*')
 /**
- * Processes the incoming JSON request, and then sends it to a router to perform the
- * appropriate updating based on SObject type.
+ * Processes the incoming JSON request, and then prepare the data for updating fields.
  */
 global with sharing class DataProcessCoordinator {
 
