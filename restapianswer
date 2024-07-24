@@ -18,7 +18,7 @@ global with sharing class DataProcessCoordinator {
         // Map<Map<String, String>, List<SObject>> finalData = new Map<Map<String, String>, List<SObject>>();
 
         // Call the method to update records using the deserialized data
-        // createListOfRecordsToUpdate(finalData);
+        // prepareRecordsToUpdate(finalData);
     }
 
     /**
@@ -27,7 +27,7 @@ global with sharing class DataProcessCoordinator {
      * Map<String, String> contains the field API and the value to update.
      * List<SObject> contains the various records to update.
      */
-    private static void createListOfRecordsToUpdate(Map<Map<String, String>, List<SObject>> jsonData) {
+    private static void prepareRecordsToUpdate(Map<Map<String, String>, List<SObject>> jsonData) {
         List<SObject> recordsToUpdate = new List<SObject>();
         Set<Map<String, String>> fieldMaps = jsonData.keySet();
         System.debug('Field Maps: ' + fieldMaps);
