@@ -41,7 +41,7 @@ global with sharing class DataProcessCoordinator {
 
             // Loop through those objects
             for (SObject record : records) {
-                // Loop through the field pairs
+                // Loopsydoo through the field pairs
                 for (String fieldName : fieldMap.keySet()) {
                     // Set the field change to the record
                     record.put(fieldName, fieldMap.get(fieldName));
