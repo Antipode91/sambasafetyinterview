@@ -29,7 +29,7 @@ global with sharing class DataProcessCoordinator {
      */
     private static void prepareRecordsToUpdate(Map<Map<String, String>, List<SObject>> jsonData) {
         List<SObject> recordsToUpdate = new List<SObject>();
-        Set<Map<String, String>> fieldMaps = jsonData.keySet();
+        Set<Map<String, String>> fieldMaps = jsonData.keySet(); //Mainly here to assist in debugging
         System.debug('Field Maps: ' + fieldMaps);
 
         // Loops through each field update pair
