@@ -31,7 +31,7 @@ global with sharing class DataProcessCoordinator {
         Set<Map<String, String>> fieldMaps = jsonData.keySet(); //Mainly here to assist in debugging
         System.debug('Field Maps: ' + fieldMaps);
 
-        // Loops through each field update pair
+        // Loops through each map of field updates (a map can contain one to many fields pairs)
         for (Map<String, String> fieldMap : fieldMaps) {
             System.debug('Current fieldMap: ' + fieldMap);
 
