@@ -5,7 +5,7 @@
 global with sharing class DataProcessCoordinator {
 
     /**
-     * The HTTP PATCH method to process incoming data.
+     * Process incoming data and deseralize the JSON date into field/value/sobject mapping setup
      * Deserialization from JSON would typically happen here.
      */
     @HttpPatch
