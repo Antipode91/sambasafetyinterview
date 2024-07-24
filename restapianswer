@@ -52,7 +52,7 @@ global with sharing class DataProcessCoordinator {
             }
         }
 
-        // Call the method to update records
+        // Call the method to update the records now stored in recordsToUpdate
         updateRecords(recordsToUpdate);
     }
 
