@@ -58,6 +58,8 @@ global with sharing class DataProcessCoordinator {
 
     private static void updateRecords(List<SObject> recordsForUpdate) {
         // Perform the bulk update DML operation with partial success
+        // In theory, this is only triggered via a sent json, so there will always be somethin to update
+        // But could create a null-check if that makes sense
         Database.SaveResult[] saveResults = Database.update(recordsForUpdate, false);
 
         // Handle the results
