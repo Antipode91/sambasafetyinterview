@@ -56,6 +56,10 @@ global with sharing class DataProcessCoordinator {
         updateRecords(recordsToUpdate);
     }
 
+    /**
+     *Method handles the DML for the records being passed through.
+     *Is encapsulated for reusability
+     */
     private static void updateRecords(List<SObject> recordsForUpdate) {
         // Perform the bulk update DML operation with partial success
         // In theory, this is only triggered via a sent json, so there will always be somethin to update
