@@ -24,7 +24,7 @@ global with sharing class DataProcessCoordinator {
      * Method to update records in Salesforce.
      * This method takes the deserialized Map<Map<String, String>, List<SObject>> as a parameter.
      * Map<String, String> contains the field API and the value to update.
-     * List<SObject> contains the various records to update.
+     * List<SObject> contains the various records to update that relate to the map of field updates.
      */
     private static void prepareRecordsToUpdate(Map<Map<String, String>, List<SObject>> jsonData) {
         List<SObject> recordsToUpdate = new List<SObject>();
